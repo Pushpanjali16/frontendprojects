@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
       document.onkeydown = function(e) {
@@ -23,99 +23,76 @@
     </script>
   </head>
   <body oncontextmenu="return false;">
-    <table frame="box" rules="all" border="2" cellpadding="4" cellspacing="5">
-      <thead >
-        <tr >
-          <th >IMAGE</th>
-          <th>VISIT LINK</th>
-          <th>DESCRIPTION</th>
-        </tr>
-      </thead>
-      <tbody >
-        <tr>
-          <th colspan="3">CARS</th>
-        </tr>
-        <tr>
-          <td>
-            <img
-              width="200px"
-              height="150px"
-              src="https://vid.alarabiya.net/images/2023/04/12/2d220739-e6e3-4f4a-86f0-672691659959/2d220739-e6e3-4f4a-86f0-672691659959.jpg?crop=1:1&width=1000"
-              alt="car"
-            />
-          </td>
-          <td><p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-            quidem voluptate repellat ratione nam. Ipsam nisi fugit a dolorum.
-            Quia, necessitatibus. Eos nulla maiores reiciendis. Perspiciatis,
-            officia, veniam maiores culpa modi adipisci nisi expedita nobis
-            nostrum recusandae amet. Accusantium animi nostrum consequuntur
-            similique illo commodi ullam asperiores blanditiis ducimus placeat!
-          </p></td>
-          <td>
-            <a
-              href="https://vid.alarabiya.net/images/2023/04/12/2d220739-e6e3-4f4a-86f0-672691659959/2d220739-e6e3-4f4a-86f0-672691659959.jpg?crop=1:1&width=1000"
-              >Link</a
-            >
-          </td>
-        </tr>
-       <!-- ------ -->
-       <tr>
-        <th colspan="3">WATCHES</th>
-      </tr>
-      <tr>
-        <td>
-          <img
-            width="200px"
-            height="150px"
-            src="https://www.fashionbeans.com/wp-content/uploads/2016/11/expensivewatchestop1.jpg"
-            alt="car"
-          />
-        </td>
-        <td><p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-          quidem voluptate repellat ratione nam. Ipsam nisi fugit a dolorum.
-          Quia, necessitatibus. Eos nulla maiores reiciendis. Perspiciatis,
-          officia, veniam maiores culpa modi adipisci nisi expedita nobis
-          nostrum recusandae amet. Accusantium animi nostrum consequuntur
-          similique illo commodi ullam asperiores blanditiis ducimus placeat!
-        </p></td>
-        <td>
-          <a
-            href="https://www.fashionbeans.com/wp-content/uploads/2016/11/expensivewatchestop1.jpg"
-            >Link</a
-          >
-        </td>
-      </tr>
-      <!-- ----------- -->
-      <tr>
-        <th colspan="3">Shoes</th>
-      </tr>
-      <tr>
-        <td>
-          <img
-            width="200px"
-            height="150px"
-            src="https://www.inventiva.co.in/wp-content/uploads/2022/03/Top-35-Most-Expensive-Shoes-For-Men-Best-Luxury-Brands.jpg"
-            alt="car"
-          />
-        </td>
-        <td><p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-          quidem voluptate repellat ratione nam. Ipsam nisi fugit a dolorum.
-          Quia, necessitatibus. Eos nulla maiores reiciendis. Perspiciatis,
-          officia, veniam maiores culpa modi adipisci nisi expedita nobis
-          nostrum recusandae amet. Accusantium animi nostrum consequuntur
-          similique illo commodi ullam asperiores blanditiis ducimus placeat!
-        </p></td>
-        <td>
-          <a
-            href="https://www.pinkvilla.com/images/2023-02/1676613650_screenshot_20230217-112813_instagram.jpg"
-            >Link</a
-          >
-        </td>
-      </tr>
-      </tbody>
-    </table>
-  </body>
+        <form>     
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label> Firstname </label>         
+        <input type="text" name="firstname" size="15"/> <br> <br>  
+        <label> Middlename: </label>     
+        <input type="text" name="middlename" size="15"/> <br> <br>  
+        <label> Lastname: </label>         
+        <input type="text" name="lastname" size="15"/> <br> <br>  
+          
+        <label>   
+        Course :  
+        </label>   
+        <select>  
+        <option value="Course">Course</option>  
+        <option value="BCA">BCA</option>  
+        <option value="BBA">BBA</option>  
+        <option value="B.Tech">B.Tech</option>  
+        <option value="MBA">MBA</option>  
+        <option value="MCA">MCA</option>  
+        <option value="M.Tech">M.Tech</option>  
+        </select>  
+          
+        <br>  
+        <br>  
+        <label>   
+        Gender :  
+        </label for="gender" ><br>  
+        <input type="radio" name="gender"/> Male <br>  
+        <input type="radio" name="gender"/> Female <br>  
+        <input type="radio" name="gender"/> Other  
+        <br>  
+        <br>  
+          <label >DOB</label>
+          <input type="datetime-local" name="" id="">
+          <br>
+        <label>   
+        Phone :  
+        </label>  
+        <input type="text" name="country code"  value="+91" size="2" disabled/>   
+        <input type="tel" name="phone" maxlength="10"  size="10"/> <br> <br>  
+        <label for="">Address  </label>
+        <br>  
+        <textarea cols="80" rows="5" value="address">  
+        </textarea>  
+        <br> <br>  
+        <label>Email:</label> 
+        <input type="email" id="email" name="email"/> <br>    
+        <br> <br>  
+        <label for="">Password:</label>
+        <input type="Password" id="pass" name="pass"> <br>   
+        <br> <br>  
+
+        <label for="">Re-type password:</label>  
+        <input type="Password" id="repass" name="repass"> <br> <br>
+        <input type="checkbox" name="" id="">Agree to terms and conditions
+        <br><br>
+        <label for="">Choose File</label>
+        <input type="file" name="" id="">
+        <br><br>
+         
+        <label for="">Choose Color</label>
+        <input type="color" name="" id="">
+        <br><br>
+        
+        <input type="reset" value="Reset"/> 
+        <input type="button" value="Submit"/>  
+        
+        </fieldset>
+        </form>  
+       
+</body>
 </html>
