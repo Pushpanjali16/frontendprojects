@@ -1,157 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
-    <link href="styles.css" rel="stylesheet"/>
-    <style>
-        body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-  font-family: sans-serif;
-  padding: 20px;
-}
+    <title>Document</title>
+    <script>
+      document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+  return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+  return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+  return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+  return false;
+  }
+  }
+    </script>
+  </head>
+  <body oncontextmenu="return false;">
+    <h1>Bittoo Aggarwal</h1>
+    <p>Software Developer, Educator at Geekster</p>
+    <a href="https://www.linkedin.com/in/bittoo-aggarwal/">Linkedin</a>
+    <a href="https://github.com/bitz1119">Github</a>
+    <hr />
+    <h2>Experience</h2>
+    <h3>Software developer at Amazon</h3>
+    <p>
+      I work with amazon in transportation team, some more description Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Possimus, ullam! Maxime
+      officiis consequuntur libero eaque reprehenderit quisquam nam ab vitae
+      totam id commodi laborum enim, sint ea odit quasi soluta!
+      <br />
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iusto
+      ut praesentium modi. Incidunt atque voluptatem, dignissimos officiis
+      reprehenderit est!
+    </p>
+    <hr />
 
-h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
+    <h3>Educator at Geekster</h3>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora cum
+      inventore aliquam, nulla eos dignissimos ipsum voluptas id, dolores
+      suscipit totam nostrum perferendis alias, expedita quaerat distinctio
+      asperiores! Nobis, aliquid. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Facere ipsa ab qui autem nesciunt vel consequatur non
+      totam, temporibus excepturi voluptatem iure impedit ut repellendus earum
+      necessitatibus nemo eligendi, animi debitis reiciendis suscipit. Unde iure
+      obcaecati dolores, numquam quibusdam rerum facilis a quam quos ad ullam
+      consectetur reiciendis deserunt similique.
+    </p>
+    <hr />
 
-h2 {
-  font-size: 30px;
-}
+    <h2>Skills</h2>
+    <!-- how to comment -->
+    <!-- I want to add skills list -->
+    <ul>
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>Testing</li>
+      <li>API Designing</li>
+      <li>System Design</li>
+    </ul>
 
-.established {
-  font-style: italic;
-}
-
-h1, h2, p {
-  text-align: center;
-}
-
-.menu {
-  width: 80%;
-  background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  max-width: 500px;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-hr {
-  height: 2px;
-  background-color: brown;
-  border-color: brown;
-}
-
-.bottom-line {
-  margin-top: 25px;
-}
-
-h1, h2 {
-  font-family: Impact, serif;
-}
-
-.item p {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-
-.flavor, .dessert {
-  text-align: left;
-  width: 75%;
-}
-
-.price {
-  text-align: right;
-  width: 25%;
-}
-
-/* FOOTER */
-
-footer {
-  font-size: 14px;
-}
-
-.address {
-  margin-bottom: 5px;
-}
-
-a {
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: brown;
-}
-
-a:active {
-  color: brown;
-}
-    </style>
-</head>
-<body>
-    <div class="menu">
-        <main>
-          <h1>CAMPER CAFE</h1>
-          <p class="established">Est. 2020</p>
-          <hr>
-          <section>
-            <h2>Coffee</h2>
-            <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-            <article class="item">
-              <p class="flavor">French Vanilla</p><p class="price">3.00</p>
-            </article>
-            <article class="item">
-              <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
-            </article>
-            <article class="item">
-              <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
-            </article>
-            <article class="item">
-              <p class="flavor">Hazelnut</p><p class="price">4.00</p>
-            </article>
-            <article class="item">
-              <p class="flavor">Mocha</p><p class="price">4.50</p>
-            </article>
-          </section>
-          <section>
-            <h2>Desserts</h2>
-            <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-            <article class="item">
-              <p class="dessert">Donut</p><p class="price">1.50</p>
-            </article>
-            <article class="item">
-              <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
-            </article>
-            <article class="item">
-              <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-            </article>
-            <article class="item">
-              <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-            </article>
-          </section>
-        </main>
-        <hr class="bottom-line">
-        <footer>
-          <p>
-            <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
-          </p>
-          <p class="address">123 Free Code Camp Drive</p>
-        </footer>
-      </div>
-</body>
+    <hr />
+    <h2>Hobbies</h2>
+    <ol>
+      <li>Table Tennis</li>
+      <li>Reading Books</li>
+      <li>Biography</li>
+      <li>Teaching</li>
+    </ol>
+    <hr />
+    <h2>Projects</h2>
+    <dl>
+      <dt>Project-1</dt>
+      <dd>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, provident?
+        Voluptatem quos dignissimos velit quia, assumenda molestiae hic,
+        maiores, corporis a tempore perferendis repellendus quod modi non quo
+        ipsam laboriosam consectetur voluptates quibusdam facilis nisi unde
+        libero? Pariatur, recusandae aspernatur.
+      </dd>
+      <dt>Project-2</dt>
+      <dd>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, provident?
+        Voluptatem quos dignissimos velit quia, assumenda molestiae hic,
+        maiores, corporis a tempore perferendis repellendus quod modi non quo
+        ipsam laboriosam consectetur voluptates quibusdam facilis nisi unde
+        libero? Pariatur, recusandae aspernatur.
+      </dd>
+    </dl>
+    <hr>
+    <pre>
+        Contact Details 
+        Email:abc@gamil.com 
+        Mobile no. :8448xxxx18
+    </pre>
+  </body>
 </html>
